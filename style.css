@@ -124,6 +124,9 @@
     z-index: 1;
     display: none;
 }
+.tooltip.active{
+    display: block;
+}
 .tooltip span{
     color:hsl(214, 17%, 51%);
     font-size: 13px;
@@ -133,6 +136,7 @@
     color:#fff;
     font-size:14px;
     padding: 2px;
+    cursor: pointer;
 }
 .tooltip:after{
     content: " ";
