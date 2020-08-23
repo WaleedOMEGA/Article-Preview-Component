@@ -147,3 +147,65 @@
     border-style: solid;
     border-color: hsl(217, 19%, 35%) transparent transparent transparent;
 }
+
+.mobile{
+    display: none;
+}
+
+@media(min-width:375px)and (max-width:1000px){
+    .container{
+        flex-direction: column;
+        height:1000px ;
+    }
+    .image{
+        width:100%;
+    }
+    .content{
+        width: 100%;
+        padding: 0;
+    }
+    .content h2,.content p{
+        padding:20px;
+    }
+    .profile,.text,.share{
+        display: none;
+    }
+    .mobile{
+        display: block;
+        width: 100%;
+        background-color: hsl(217, 19%, 35%);
+        height: 50px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    .mobile .tooltip{
+        display: inline-block;
+    }
+    .mobile span{
+        font-size:18px;
+    }
+    .mobile i {
+        font-size:16px;
+        padding: 8px;
+    }
+    .mobile button{
+        margin-top:10px ;
+        color:#fff;
+        font-size: 10px;
+        font-weight: 500;
+        background-color:hsl(214, 17%, 51%);
+        padding:5px;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        border:none;
+        cursor: pointer;
+        margin-left: 50px;
+    }
+    .mobile button:hover{
+        background-color:hsl(217, 19%, 35%);
+        color:#fff;
+    }
+}
